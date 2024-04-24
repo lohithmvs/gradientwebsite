@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient</title>
+    <style>
+        .rainbow{
+            display: inline-block;
+            margin-left: 400px;
+            border: 2px solid black;
+            height: 300px;
+            width: 600px;
+            background-image: linear-gradient(violet,indigo,blue,green,yellow,orange,red);
+        }
+        .drop{
+            display: inline-block;
+            margin-left: 400px;
+            margin-top: 50px;
+            height: 300px;
+            width: 600px;
+            border: 2px solid black;
+            background-image: radial-gradient(blue,rgb(20, 20, 70),rgb(44, 131, 212),rgb(24, 131, 131),rgb(34, 7, 85));
+            animation-name: id2;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes id2 {
+            0%{
+                background-image: radial-gradient(blue 30%,rgb(20, 20, 70) 50%,rgb(44, 131, 212) 80%,rgb(24, 131, 131) 90%,rgb(34, 7, 85) 100%);
+            }
+            33.33%{
+                background-image: radial-gradient(blue 10%,rgb(20, 20, 70) 30%,rgb(44, 131, 212) 40%,rgb(24, 131, 131) 60%,rgb(34, 7, 85) 80%,
+                rgb(12, 168, 108) 90%,rgb(23, 223, 66) 100%);
+            }
+            99.99%{
+                background-image: radial-gradient(blue,rgb(20, 20, 70),rgb(44, 131, 212),rgb(24, 131, 131),rgb(34, 7, 85));
+            }
+        }
+        .piechart{
+            display: inline-block;
+            margin-left: 490px;
+            margin-top: 50px;
+            height: 300px;
+            width: 300px;
+            border-radius: 50%;
+            border: 2px solid black;
+            background-image: conic-gradient(red 10%,yellow 0 40%,green 0 60%,blue 0 70%,orange 0 100%);
+        }
+    </style>
+</head>
+<body>
+    <div class="rainbow">
+
+    </div> <br>
+    <div class="drop">
+
+    </div><br>
+    <div class="piechart">
+        <span style="display:inline-block;border:2px solid black;background-color:red;width:10px;height:10px;
+        margin-left:400px;margin-top:70px"><span style="margin-left: 20px;">10%</span></span>
+        <span style="display:inline-block;border:2px solid black;background-color:yellow;width:10px;height:10px;
+        margin-left:400px;margin-top:20px"><span style="margin-left: 20px;">30%</span></span>
+        <span style="display:inline-block;border:2px solid black;background-color:green;width:10px;height:10px;
+        margin-left:400px;margin-top:20px"><span style="margin-left: 20px;">20%</span></span>
+        <span style="display:inline-block;border:2px solid black;background-color:blue;width:10px;height:10px;
+        margin-left:400px;margin-top:20px"><span style="margin-left: 20px;">10%</span></span>
+        <span style="display:inline-block;border:2px solid black;background-color:orange;width:10px;height:10px;
+        margin-left:400px;margin-top:20px"><span style="margin-left: 20px;">30%</span></span>
+    </div>
+</body>
+</html>
